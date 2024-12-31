@@ -1,0 +1,13 @@
+<div class="row">
+    <h3>Desenvolvimento:</h3>
+    <hr />
+</div>
+<div class="row">
+    <form class="row g-3" action="#" th:action="${desafio.url}" th:object="${desafio}" method="post">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Lado do texto normal ->></label>
+        <div class="col-auto"><input class="form-control" type="text" th:field="*{frase}" /></div>
+        <div class="col-auto"><input class="btn btn-primary" type="submit" value="<- Converter ->" /></div>
+        <div class="col-auto"><input class="form-control" type="text" th:field="*{fraseCriptografada}" /></div>
+        <label for="staticEmail" class="col-sm-2 col-form-label"><<- Lado criptografado</label>
+    </form>
+</div>
